@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ecologia da Atenção</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+    --bg:#f3efe7;
+    --paper:#fbf8f2;
+    --ink:#2d322f;
+    --muted:#6c716d;
+    --line:#ddd5c8;
+    --accent:#53675d;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    background:var(--bg);
+    font-family:Inter,sans-serif;
+    color:var(--ink);
+}
+.wrapper{
+    max-width:1150px;
+    margin:auto;
+    padding:56px 36px 70px;
+}
+header{
+    margin-bottom:42px;
+}
+h1{
+    margin:0;
+    font:600 58px "Cormorant Garamond",serif;
+}
+.subtitle{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:18px;
+    max-width:680px;
+    line-height:1.7;
+}
+.room{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:28px;
+    margin-bottom:28px;
+    box-shadow:0 10px 24px rgba(0,0,0,.05);
+}
+h2{
+    margin:0 0 8px;
+    font:500 34px "Cormorant Garamond",serif;
+}
+.desc{
+    margin:0 0 18px;
+    color:var(--muted);
+    line-height:1.6;
+}
+.shelf{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px;
+}
+.book{
+    display:block;
+    text-decoration:none;
+    padding:15px 16px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:white;
+    color:var(--ink);
+    transition:.18s;
+}
+.book:hover{
+    transform:translateY(-2px);
+    border-color:var(--accent);
+    background:#f7f8f5;
+}
+.book strong{
+    display:block;
+    font-weight:500;
+}
+.book span{
+    display:block;
+    margin-top:4px;
+    font-size:13px;
+    color:var(--muted);
+}
+footer{
+    margin-top:26px;
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <h1>Ecologia da Atenção</h1>
+    <div class="subtitle">Biblioteca</div>
+</header>
+<section class="room">
+<h2>Biblioteca de Atualidades</h2>
+<p class="desc">
+Jornalismo e contexto.
+</p>
+<div class="shelf">
+<a class="book" href="https://www.nytimes.com" target="_blank">
+<strong>The New York Times</strong>
+<span>Magazine · Opinion · Book Review</span>
+</a>
+<a class="book" href="https://piaui.folha.uol.com.br" target="_blank">
+<strong>Revista piauí</strong>
+<span>Reportagens e ensaios</span>
+</a>
+<a class="book" href="https://www.theatlantic.com" target="_blank">
+<strong>The Atlantic</strong>
+<span>Política · Sociedade · Cultura</span>
+</a>
+</div>
+</section>
+<section class="room">
+<h2>Sala de Ensaios</h2>
+<p class="desc">
+Ideias que recompensam leitura lenta.
+</p>
+<div class="shelf">
+<a class="book" href="https://aeon.co" target="_blank">
+<strong>Aeon</strong>
+<span>Filosofia · Psicologia</span>
+</a>
+<a class="book" href="https://www.noemamag.com" target="_blank">
+<strong>Noema</strong>
+<span>IA · Democracia · Futuro</span>
+</a>
+<a class="book" href="https://worksinprogress.news" target="_blank">
+<strong>Works in Progress</strong>
+<span>Ciência · Inovação</span>
+</a>
+<a class="book" href="https://hedgehogreview.com" target="_blank">
+<strong>The Hedgehog Review</strong>
+<span>Humanidades</span>
+</a>
+</div>
+</section>
+<section class="room">
+<h2>Gabinete</h2>
+<p class="desc">
+Direito, tecnologia e instituições.
+</p>
+<div class="shelf">
+<a class="book" href="https://www.lawfaremedia.org" target="_blank">
+<strong>Lawfare</strong>
+</a>
+<a class="book" href="https://verfassungsblog.de" target="_blank">
+<strong>Verfassungsblog</strong>
+</a>
+<a class="book" href="https://knightcolumbia.org" target="_blank">
+<strong>Knight First Amendment Institute</strong>
+</a>
+<a class="book" href="https://www.justsecurity.org" target="_blank">
+<strong>Just Security</strong>
+</a>
+</div>
+</section>
+<section class="room">
+<h2>Observatório</h2>
+<p class="desc">
+Ciência, dados e compreensão empírica.
+</p>
+<div class="shelf">
+<a class="book" href="https://www.quantamagazine.org" target="_blank">
+<strong>Quanta Magazine</strong>
+</a>
+<a class="book" href="https://ourworldindata.org" target="_blank">
+<strong>Our World in Data</strong>
+</a>
+</div>
+</section>
+<section class="room">
+<h2>Literatura & Cultura</h2>
+<p class="desc">
+Revistas literárias e culturais.
+</p>
+<div class="shelf">
+<a class="book" href="https://www.newyorker.com" target="_blank">
+<strong>The New Yorker</strong>
+</a>
+<a class="book" href="https://www.lrb.co.uk" target="_blank">
+<strong>London Review of Books</strong>
+</a>
+<a class="book" href="https://www.theparisreview.org" target="_blank">
+<strong>The Paris Review</strong>
+</a>
+<a class="book" href="https://www.nybooks.com" target="_blank">
+<strong>The New York Review of Books</strong>
+</a>
+<a class="book" href="https://www.publicbooks.org" target="_blank">
+<strong>Public Books</strong>
+</a>
+</div>
+</section>
+<footer>
+Ecologia da Atenção
+</footer>
+</div>
+</body>
+</html>
